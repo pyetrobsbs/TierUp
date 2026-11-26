@@ -10,13 +10,37 @@ import SwiftUI
 
 class TierStore: ObservableObject {
 
-    // @Published: sempre que `listas` muda, os ecrãs que a usam redesenham-se
-    @Published var listas: [TierList]
+    // @Published: sempre que `listas` muda, os ecrãs que a usam redesenham-se.
+    // didSet: depois de cada alteração, grava tudo automaticamente.
+    @Published var listas: [TierList] {
+        didSet {
+            gravar()
+        }
+    }
+
+    // Nome da "gaveta" do UserDefaults onde guardamos os dados
+    private static let chave = "tierListas"
 
     init() {
-        // Por agora começamos com dados de exemplo.
-        // (A gravação em UserDefaults fica para o passo 5.)
-        listas = TierList.exemplos
+        // Tenta ler o que ficou gravado; se não houver nada, usa os exemplos.
+        // (Atribuir aqui no init NÃO chama o didSet.)
+        listas = TierStore.carregar() ?? TierList.exemplos
+    }
+
+    // MARK: - Gravação (JSON no UserDefaults)
+
+    /// Converte as listas em JSON e guarda no UserDefaults.
+    private func gravar() {
+        // try? = se der erro, devolve nil em vez de rebentar a app
+        if let dados = try? JSONEncoder().encode(listas) {
+            UserDefaults.standard.set(dados, forKey: TierStore.chave)
+        }
+    }
+
+    /// Lê o JSON do UserDefaults e converte de volta em [TierList].
+    private static func carregar() -> [TierList]? {
+        guard let dados = UserDefaults.standard.data(forKey: chave) else { return nil }
+        return try? JSONDecoder().decode([TierList].self, from: dados)
     }
 
     // MARK: - Ajuda interna
