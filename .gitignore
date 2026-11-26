@@ -1,0 +1,26 @@
+# --- macOS ---
+# Ficheiros que o Finder cria sozinho em cada pasta
+.DS_Store
+._*
+
+# --- Xcode: dados pessoais de cada utilizador ---
+# (posição das janelas, ficheiros abertos, breakpoints... mudam sempre)
+xcuserdata/
+*.xcuserstate
+
+# --- Xcode: resultados de compilação ---
+DerivedData/
+build/
+*.xcarchive
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# --- Swift Package Manager ---
+.swiftpm/
+.build/
+
+# --- Editores no Linux ---
+.vscode/
+*.swp
+*~
