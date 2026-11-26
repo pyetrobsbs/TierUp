@@ -11,6 +11,12 @@
 		969686D530B8C9E2000FD1B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969686D430B8C9E2000FD1B5 /* ContentView.swift */; };
 		969686D730B8C9E5000FD1B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969686D630B8C9E5000FD1B5 /* Assets.xcassets */; };
 		969686DA30B8C9E5000FD1B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969686D930B8C9E5000FD1B5 /* Preview Assets.xcassets */; };
+		969686E130B8CC82000FD1B5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969686E030B8CC81000FD1B5 /* Models.swift */; };
+		969686E330B8CCAA000FD1B5 /* ListasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969686E230B8CCAA000FD1B5 /* ListasView.swift */; };
+		969686E530B8CCB7000FD1B5 /* TabuleiroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969686E430B8CCB6000FD1B5 /* TabuleiroView.swift */; };
+		969686E730B8CCC2000FD1B5 /* DetalheItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969686E630B8CCC2000FD1B5 /* DetalheItemView.swift */; };
+		969686E930B8CCE2000FD1B5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969686E830B8CCE2000FD1B5 /* CardView.swift */; };
+		969686EB30B8CCEB000FD1B5 /* DetalheItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969686EA30B8CCEB000FD1B5 /* DetalheItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		969686D430B8C9E2000FD1B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		969686D630B8C9E5000FD1B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		969686D930B8C9E5000FD1B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		969686E030B8CC81000FD1B5 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		969686E230B8CCAA000FD1B5 /* ListasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListasView.swift; sourceTree = "<group>"; };
+		969686E430B8CCB6000FD1B5 /* TabuleiroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabuleiroView.swift; sourceTree = "<group>"; };
+		969686E630B8CCC2000FD1B5 /* DetalheItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheItemView.swift; sourceTree = "<group>"; };
+		969686E830B8CCE2000FD1B5 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		969686EA30B8CCEB000FD1B5 /* DetalheItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,12 @@
 			isa = PBXGroup;
 			children = (
 				969686D230B8C9E2000FD1B5 /* TierUpApp.swift */,
+				969686E830B8CCE2000FD1B5 /* CardView.swift */,
+				969686E630B8CCC2000FD1B5 /* DetalheItemView.swift */,
+				969686EA30B8CCEB000FD1B5 /* DetalheItemView.swift */,
+				969686E430B8CCB6000FD1B5 /* TabuleiroView.swift */,
+				969686E230B8CCAA000FD1B5 /* ListasView.swift */,
+				969686E030B8CC81000FD1B5 /* Models.swift */,
 				969686D430B8C9E2000FD1B5 /* ContentView.swift */,
 				969686D630B8C9E5000FD1B5 /* Assets.xcassets */,
 				969686D830B8C9E5000FD1B5 /* Preview Content */,
@@ -137,7 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969686E930B8CCE2000FD1B5 /* CardView.swift in Sources */,
+				969686EB30B8CCEB000FD1B5 /* DetalheItemView.swift in Sources */,
+				969686E130B8CC82000FD1B5 /* Models.swift in Sources */,
+				969686E730B8CCC2000FD1B5 /* DetalheItemView.swift in Sources */,
+				969686E530B8CCB7000FD1B5 /* TabuleiroView.swift in Sources */,
 				969686D530B8C9E2000FD1B5 /* ContentView.swift in Sources */,
+				969686E330B8CCAA000FD1B5 /* ListasView.swift in Sources */,
 				969686D330B8C9E2000FD1B5 /* TierUpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
